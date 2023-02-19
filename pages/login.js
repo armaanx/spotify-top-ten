@@ -2,11 +2,11 @@ import NavBar from "@/components/navbar";
 import { getProviders, signIn } from "next-auth/react";
 export default function Login({ providers }) {
   return (
-    <>
+    <div className="min-h-screen">
       <div>
         <NavBar />
       </div>
-      <div className="flex flex-col items-center w-full justify-center">
+      <div className="flex flex-col items-center justify-center w-full">
         <img
           className="mb-7 mt-7 w-40 h-40"
           src="/Spotify_Icon_RGB_Green.png"
@@ -23,7 +23,7 @@ export default function Login({ providers }) {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 

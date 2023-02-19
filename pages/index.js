@@ -6,7 +6,6 @@ export default function Home() {
   const { data: session, status } = useSession();
   const [timeRange, setTimeRange] = useState("short_term");
   const [showType, setShowType] = useState("tracks");
-
   function onOptionChange(e) {
     setShowType(e.target.value);
   }
@@ -18,7 +17,7 @@ export default function Home() {
     <>
       <NavBar />
       <div className="min-w-[340px] font-[Montserrat] font-semibold">
-        <div className="flex items-center justify-center gap-1 p-2 text-sm">
+        <div className="flex items-center justify-center gap-1 p-2 text-sm mt-2">
           <div>
             <input
               onChange={onOptionChange}
@@ -102,7 +101,11 @@ export default function Home() {
         </div>
       </div>
 
-      <TopTen timeRange={timeRange} type={showType} />
+      <TopTen
+        timeRange={timeRange}
+        type={showType}
+        name={session?.user?.name}
+      />
     </>
   );
 }
