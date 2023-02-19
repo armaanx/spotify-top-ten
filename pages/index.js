@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import TopTen from "@/components/topten/TopTen";
 import { useSession } from "next-auth/react";
@@ -106,6 +107,7 @@ export default function Home() {
         type={showType}
         name={session?.user?.name}
       />
+      <Footer />
     </>
   );
 }
