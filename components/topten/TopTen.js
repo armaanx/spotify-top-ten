@@ -8,7 +8,7 @@ export default function TopTen({ timeRange, type, name }) {
   const [randomNumber, setRandomNumber] = useState(Math.floor(null));
   useEffect(() => {
     setRandomNumber(Math.floor(Math.random() * 90 + 10));
-  }, [timeRange, type]);
+  }, []);
   var period;
 
   if (timeRange === "short_term") {
