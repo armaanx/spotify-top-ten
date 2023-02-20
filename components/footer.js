@@ -5,13 +5,9 @@ export default function Footer() {
     <div className="flex flex-col items-center justify-center p-4 mt-6 font-[Montserrat] gap-1 mb-3">
       <span className="text-sm">
         Made by{" "}
-        <a
-          className="underline text-blue-500"
-          href="https://github.com/armaanx"
-          target="_blank"
-          rel="noopener noreferrer">
+        <Link className="underline text-blue-500" href="/contact">
           Armaan
-        </a>
+        </Link>
       </span>
       <span className="text-xs">
         <Link className="underline text-blue-500" href="/about">

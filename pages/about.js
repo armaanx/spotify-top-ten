@@ -7,7 +7,7 @@ export default function About() {
     <>
       <NavBar />
       <div className="min-w-[340px] grid place-items-center">
-        <div className="font-[Montserrat] flex flex-col justify-center items-center mt-20 p-5 border-2 border-black max-w-fit rounded-2xl shadow-sm shadow-[#9c9c9c] ">
+        <div className="font-[Montserrat] flex flex-col justify-center items-center mt-20 p-5 border-[1px] border-black max-w-fit rounded-2xl shadow-sm shadow-[#9c9c9c] ">
           <span>
             Inspired by{" "}
             <a
