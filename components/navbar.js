@@ -21,9 +21,9 @@ export default function NavBar() {
           ) : null}
 
           {session ? (
-            <div className="flex flex-row items-center justify-center  rounded-full bg-[#050505] p-2 ml-2 pl-3 hover:opacity-80 drop-shadow-md">
+            <div className="flex flex-row items-center justify-center  rounded-full bg-[#050505] p-2 ml-2 pl-3 hover:opacity-80 drop-shadow-md hover:bg-red-600">
               <button title="Log Out" onClick={signOut}>
-                <HiLogout className="text-gray-200 h-5 w-5 " />
+                <HiLogout className="text-gray-200 h-5 w-5 hover:text-black " />
               </button>
             </div>
           ) : null}

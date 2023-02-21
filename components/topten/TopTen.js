@@ -23,7 +23,7 @@ export default function TopTen({ timeRange, type, name }) {
   return (
     <div
       id="my-node"
-      className="w-[340px] border-2 border-black m-auto p-3 pt-2 flex flex-col mb-4">
+      className="w-[340px] border-[1px] border-black m-auto p-3 pt-2 flex flex-col mb-4 bg-[url('/paper.jpg')] bg-opacity-100 bg-cover">
       <div className="flex flex-col items-center justify-center border-b-[1px] border-black border-dashed mb-3">
         <h1 className="text-3xl font-bold pb-1 font-[Montserrat] tracking-wider">
           Top {_.capitalize(type)}

@@ -7,11 +7,11 @@ export default function About() {
     <>
       <NavBar />
       <div className="min-w-[340px] grid place-items-center">
-        <div className="font-[Montserrat] flex flex-col justify-center items-center mt-20 p-5 border-[1px] border-black max-w-fit rounded-2xl shadow-sm shadow-[#9c9c9c] ">
+        <div className="font-[Montserrat] flex flex-col justify-center items-center mt-20 p-5 border-[1px] border-black max-w-fit rounded-2xl shadow-sm shadow-[#9c9c9c] gap-2 ">
           <span>
             Inspired by{" "}
             <a
-              className="underline text-blue-500"
+              className=" text-blue-500"
               href="https://receiptify.herokuapp.com/ "
               target="_blank"
               rel="noopener noreferrer">
@@ -21,7 +21,7 @@ export default function About() {
           <span>
             Powered by{" "}
             <a
-              className="underline text-blue-500"
+              className=" text-blue-500"
               href="https://developer.spotify.com/documentation/web-api/"
               target="_blank"
               rel="noopener noreferrer">
