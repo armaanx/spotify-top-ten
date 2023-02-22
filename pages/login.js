@@ -1,8 +1,15 @@
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
-import { getProviders, signIn } from "next-auth/react";
+import { getProviders, signIn, useSession } from "next-auth/react";
+import { Router, useRouter } from "next/router";
 import { BsSpotify } from "react-icons/bs";
 export default function Login({ providers }) {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+  if (session) {
+    router.push("/");
+  }
+
   return (
     <>
       <div className="mb-24">
