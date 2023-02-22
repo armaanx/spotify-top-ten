@@ -6,6 +6,7 @@ export default function TopTen({ timeRange, type, name }) {
   const day = dayjs().format("DD MMMM YYYY");
   const time = dayjs().format("H:mm");
   const [randomNumber, setRandomNumber] = useState(Math.floor(null));
+  const webUrl = "spotify-music-card.vercel.app";
   useEffect(() => {
     setRandomNumber(Math.floor(Math.random() * 90 + 10));
   }, []);
@@ -38,7 +39,7 @@ export default function TopTen({ timeRange, type, name }) {
       <div className="flex flex-col items-center justify-center  font-mono text-sm mt-2 pt-1 border-t-[1px] border-black border-dashed">
         <h1>Card #00{randomNumber}</h1>
         <h1>User: {name}</h1>
-        <h1 className="text-xs pt-2">spotify-music-card.vercel.app</h1>
+        <h1 className="text-xs pt-2">{webUrl}</h1>
       </div>
     </div>
   );
