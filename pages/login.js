@@ -3,6 +3,7 @@ import NavBar from "@/components/navbar";
 import { getProviders, signIn, useSession } from "next-auth/react";
 import { Router, useRouter } from "next/router";
 import { BsSpotify } from "react-icons/bs";
+import { HiExternalLink } from "react-icons/hi";
 export default function Login({ providers }) {
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -36,6 +37,18 @@ export default function Login({ providers }) {
               </div>
             );
           })}
+          <a
+            className="pt-1 font-bold text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1zw3qxZCKMDjus5Q9tnGu_2Y89RKBfRZ9/view?usp=sharing">
+            Video Preview <HiExternalLink className="inline" />
+          </a>
+          <p className="text-xs font-medium pt-0">
+            {
+              "In development mode, not accessible to all :(            Check out the preview."
+            }
+          </p>
         </div>
         <Footer />
       </div>
