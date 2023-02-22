@@ -15,7 +15,7 @@ export default function NavBar() {
           {session ? (
             <div className="flex flex-row items-center space-x-1 bg-[#050505] rounded-full p-1  hover:opacity-80 drop-shadow-md ">
               <img
-                className="rounded-full w-10 h-10"
+                className="rounded-full h-10 w-10"
                 src={session.user.image}></img>
             </div>
           ) : null}

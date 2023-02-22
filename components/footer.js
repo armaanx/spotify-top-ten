@@ -5,20 +5,20 @@ export default function Footer() {
     <div className="flex flex-col items-center justify-center p-4 mt-6 font-[Montserrat] gap-1 mb-3">
       <span className="text-sm">
         Made by{" "}
-        <Link className=" text-blue-500" href="/contact">
+        <Link className=" text-blue-600" href="/contact">
           Armaan
         </Link>
       </span>
       <span className="text-xs">
-        <Link className=" text-blue-500" href="/about">
+        <Link className=" text-blue-600" href="/about">
           About
         </Link>{" "}
         |{" "}
-        <Link className=" text-blue-500" href="/privacy">
+        <Link className=" text-blue-600" href="/privacy">
           Privacy Policy
         </Link>{" "}
         |{" "}
-        <Link className=" text-blue-500" href="/contact">
+        <Link className=" text-blue-600" href="/contact">
           Contact
         </Link>
       </span>
