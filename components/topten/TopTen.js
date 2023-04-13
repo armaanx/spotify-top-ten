@@ -39,6 +39,7 @@ export default function TopTen({ timeRange, type, name }) {
       <div className="flex flex-col items-center justify-center  font-mono text-sm mt-2 pt-1 border-t-[1px] border-black border-dashed">
         <h1>Card #00{randomNumber}</h1>
         <h1>User: {name}</h1>
+        <h1 className="text-xs pt-1">music-card-generator.vercel.app</h1>
       </div>
     </div>
   );
