@@ -1,4 +1,5 @@
 import TopTenList from "./toptenlist";
+import Image from "next/image";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 const _ = require("lodash");
@@ -40,6 +41,13 @@ export default function TopTen({ timeRange, type, name }) {
         <h1>Card #00{randomNumber}</h1>
         <h1>User: {name}</h1>
         <h1 className="text-xs pt-1">music-card-generator.vercel.app</h1>
+        <Image
+          quality={100}
+          className="p-2 mt-1"
+          width={120}
+          height={120}
+          src={"/spotify_logo.png"}
+        />
       </div>
     </div>
   );
